@@ -7,4 +7,6 @@ var  UsuarioController = require("../controllers/usuario-controller.js"),
 router
   //RURAS USUARIO
   .post("/usuario/autenticar", LoginController.login)
+  .post("/usuario/insertar/:codigo_usuario", UsuarioController.post)
+  
 module.exports = router;
